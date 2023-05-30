@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Histogram Generator</title>
+    <link rel="stylesheet" href="/css/histogram.css">
+    <script src="/js/calculate.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Histogram Generator</h1>
+    </header>
+    <main>
+        <div class="row">
+            <div class="column1">
+                <h2>Lower Bounds</h2>
+                <form id = "form_bounds">
+                    <table>
+                        <tr>
+                            <td>Max</td><td><input type="text" id="lower_bounds0" name="lower_bounds0"  onchange="checkbound(0,'lower_bounds0')"></td>
+                        </tr>
+                        <tr>
+                            <td>A+</td><td><input type="text" id="lower_bounds1" name="lower_bounds1" onchange="checkbound(1,'lower_bounds1')"></td>
+                        </tr>
+                        <tr>
+                            <td>A</td><td><input type="text" id="lower_bounds2" name="lower_bounds2" onchange="checkbound(2,'lower_bounds2')"></td>
+                        </tr>
+                        <tr>
+                            <td>A-</td><td><input type="text" id="lower_bounds3" name="lower_bounds3" onchange="checkbound(3,'lower_bounds3')"></td>
+                        </tr>
+                        <tr>
+                            <td>B+</td><td><input type="text" id="lower_bounds4" name="lower_bounds4" onchange="checkbound(4,'lower_bounds4')"></td>
+                        </tr>
+                        <tr>
+                            <td>B</td><td><input type="text" id="lower_bounds5" name="lower_bounds5" onchange="checkbound(5,'lower_bounds5')"></td>
+                        </tr>
+                        <tr>
+                            <td>B-</td><td><input type="text" id="lower_bounds6" name="lower_bounds6" onchange="checkbound(6,'lower_bounds6')"></td>
+                        </tr>
+                        <tr>
+                            <td>C+</td><td><input type="text" id="lower_bounds7" name="lower_bounds7" onchange="checkbound(7,'lower_bounds7')"></td>
+                        </tr>
+                        <tr>
+                            <td>C</td><td><input type="text" id="lower_bounds8" name="lower_bounds8" onchange="checkbound(8,'lower_bounds8')"></td>
+                        </tr>
+                        <tr>
+                            <td>C-</td><td><input type="text" id="lower_bounds9" name="lower_bounds9" onchange="checkbound(9,'lower_bounds9')"></td>
+                        </tr>
+                        <tr>
+                            <td>D</td><td><input type="text" id="lower_bounds10" name="lower_bounds10" onchange="checkbound(10,'lower_bounds10')"></td>
+                        </tr>
+                        <tr>
+                            <td>F</td><td><input type="text" id="lower_bounds11" name="lower_bounds11" onchange="checkbound(11,'lower_bounds11')"></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+            <div class="column2">
+
+                <div class = "box2">
+
+                    <h2>Histogram</h2>
+                    <table>
+                        <tr>
+                            <td>A+</td>
+                            <td>
+                                <div id="data0"></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>A</td>
+                            <td>
+                                <div id="data1"></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>A-</td>
+                            <td>
+                                <div id="data2"></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>B+</td>
+                            <td>
+                                <div id="data3"></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>B</td>
+                            <td>
+                                <div id="data4"></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>B-</td>
+                            <td>
+                                <div id="data5"></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>C+</td>
+                            <td>
+                                <div id="data6"></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>C</td>
+                            <td>
+                                <div id="data7"></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>C-</td>
+                            <td>
+                                <div id="data8"></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>D</td>
+                            <td>
+                                <div id="data9"></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>F</td>
+                            <td>
+                                <div id="data10"></div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class = "box3">
+                    <form>
+                        <label for="newgrade">New Grade</label>
+                        <input type="text" id="newgrade" name="newgrade">
+                        <input class="submit" type="submit" value = "Submit">
+                    </form>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

@@ -53,7 +53,7 @@ function checkbound(bound,objectname) {
             var i = 0
             while (i < grades.length) {
               if (x < grades[i]){
-                    window.alert("There is a student having mark higher than Max. Please input a valid number")
+                    window.alert("There is/are student(s) having mark higher than Max. Please input a valid number")
                     return
                 }
                 i++
@@ -63,7 +63,7 @@ function checkbound(bound,objectname) {
             i = 0
             while (i < grades.length) {
               if (x > grades[i]){
-                    window.alert("There is a student having mark lower than lower bound of F. Please input a valid number")
+                    window.alert("There is/are student(s) having mark lower than lower bound of F. Please input a valid number")
                     return
                 }
                 i++
